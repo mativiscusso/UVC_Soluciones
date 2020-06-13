@@ -19,7 +19,7 @@ main {
 }
 main p {
     position: absolute;
-    bottom: 18%;
+    bottom: 20%;
     left: 0;
     right: 0;
     font-family: "Montserrat", sans-serif;
@@ -118,7 +118,7 @@ footer img {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
     main p {
-        bottom: 13%;
+        bottom: 15%;
         font-size: 1.5rem;
         letter-spacing: 0.8rem;
     }
