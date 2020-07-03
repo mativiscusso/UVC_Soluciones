@@ -1,0 +1,19 @@
+#productos h1 {
+    background-color: $grisOscuro;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+#productos h1 strong {
+    color:$azul;
+}
+#productos article, a {
+    color: $celesteLetras;
+}
+#productos article:nth-child(odd) {
+    background-color: $grisClaro;
+}
+#productos hr {
+    width: 50%;
+    margin: auto;
+}

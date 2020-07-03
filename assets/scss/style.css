@@ -297,6 +297,95 @@ header h1 {
 #desinfeccion {
   background-image: url("../img/desinfeccion.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
+  color: white;
+}
+
+#desinfeccion div {
+  padding: 2rem 3rem;
+}
+
+#desinfeccion h3 {
+  color: #4b7ff1;
+}
+
+#caracteristicas {
+  background-color: #5a84e6;
+  color: white;
+}
+
+#caracteristicas div {
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+#caracteristicas h4 {
+  color: #2e4473;
+}
+
+#productos h1 {
+  background-color: #585c67;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#productos h1 strong {
+  color: #2e4473;
+}
+
+#productos article, a {
+  color: #4b7ff1;
+}
+
+#productos article:nth-child(odd) {
+  background-color: #e2e2e2;
+}
+
+#productos hr {
+  width: 50%;
+  margin: auto;
+}
+
+#aplicaciones h1 {
+  background-color: #585c67;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#nosotros {
+  background-color: #2e4473;
+  background-image: url("../img/nosotros.png");
+  padding: 2rem 3rem;
+  color: white;
+  text-align: center;
+}
+
+#nosotros figure {
+  padding: 2rem 0;
+}
+
+footer {
+  background-color: #585c67;
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+
+footer div {
+  padding: 2rem 0;
+}
+
+footer nav {
+  padding: 1rem 0;
+  background-color: white;
+}
+
+footer nav a {
+  color: #585c67;
+}
+
+#redes {
+  background-color: #e2e2e2;
 }
 /*# sourceMappingURL=style.css.map */

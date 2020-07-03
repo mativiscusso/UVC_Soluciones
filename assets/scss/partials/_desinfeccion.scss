@@ -1,5 +1,12 @@
 #desinfeccion {
     background-image: url('../img/desinfeccion.png');
     background-size: cover;
-    background-position: center;
+    background-position: right;
+    color: white;
+}
+#desinfeccion div {
+    padding: 2rem 3rem;
+}
+#desinfeccion h3 {
+    color: $celesteLetras;
 }
