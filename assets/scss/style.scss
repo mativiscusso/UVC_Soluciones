@@ -1,0 +1,28 @@
+// Colores
+$celesteFondo : #6584ca;
+$celesteLetras : #4f87fd;
+$grisOscuro : #585c67;
+$grisClaro: #e2e2e2;
+$azul : #2e4473;
+
+// Tipografia
+@font-face{
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+body {
+    font-family: 'Montserrat';
+}
+
+
+@import './partials/_resets';
+@import './partials/_navbar';
+@import './partials/_header';
+@import './partials/_desinfeccion';
+@import './partials/_caracteristicas';
+@import './partials/_productos';
+@import './partials/_aplicaciones';
+@import './partials/_nosotros';
+@import './partials/_footer';
+@import './partials/_contacto';
+@import './partials/_redes';

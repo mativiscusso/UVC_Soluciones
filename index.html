@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <title>UVC Soluciones</title>
 </head>
@@ -12,29 +12,35 @@
 <body>
     <header>
         <!-- Logo -->
-        <div>
+        <div id="logo">
             <img src="" alt="">
         </div>
         <!-- Logo -->
 
-        <nav>
-            <ul>
+        <!-- Menu -->
+        <nav id="menu">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <span id="logo-menu">
+                    <img src="assets/img/logo.png" alt="uvc soluciones">
+                </span>
                 <li><a href="/">Home</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#aplicaciones">Aplicaciones</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a data-scroll href="#productos">Productos</a></li>
+                <li><a data-scroll href="#aplicaciones">Aplicaciones</a></li>
+                <li><a data-scroll href="#nosotros">Nosotros</a></li>
+                <li><a data-scroll href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        </nav>
-
+        <!-- Menu -->
+     
         <h1>Estamos salvando vidas</h1>
 
     </header>
 
     <main>
         <!-- Seccion desinfeccion -->
-        <section>
+        <section id="desinfeccion">
             <div>
                 <h2>DESINFECCION</h2>
                 <h3>MEDIANTE LUZ UV</h3>
@@ -46,8 +52,8 @@
         </section>
         <!-- Seccion desinfeccion -->
 
-        <!-- Seccion  especificaciones -->
-        <section>
+        <!-- Seccion caracteristicas -->
+        <section id="caracteristicas">
             <div>
                 <figure>ICONO</figure>
                 <h4><strong>EFICACIA</strong></h4>
@@ -73,7 +79,7 @@
         <!-- Seccion  especificaciones -->
 
         <!-- Seccion productos -->
-        <section>
+        <section id="productos">
             <h1>NUESTROS <strong>PRODUCTOS</strong></h1>
             <!-- Producto darpas -->
             <article>
@@ -197,7 +203,7 @@
         <!-- Seccion productos -->
 
         <!-- Seccion aplicaciones -->
-        <section>
+        <section id="aplicaciones">
             <h1>Aplicaciones</h1>
             <div>
                 <figure>
@@ -237,7 +243,7 @@
         <!-- Seccion aplicaciones -->
 
         <!-- Seccion Nostros  -->
-        <section>
+        <section id="nosotros">
             <h1>Nosotros</h1>
             <figure>
                 <img src="" alt="">
@@ -259,7 +265,7 @@
         <footer>
             <h1>Contacto</h1>
             <!-- Formulario contacto  -->
-            <form action="" method="post">
+            <form action="" method="post" id="formulario">
                 <label for="">Nombre</label>
                 <input type="text" name="" id="">
                 <label for="">Email</label>
@@ -278,7 +284,7 @@
             <!-- Datos de la empresa  -->
 
             <!-- Redes sociales -->
-            <div>
+            <div id="redes">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
@@ -289,7 +295,7 @@
 
             <!-- Menu footer  -->
             <nav>
-                <ul>
+                <ul id="menuFooter">
                     <li><a href="/">Home</a></li>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#aplicaciones">Aplicaciones</a></li>

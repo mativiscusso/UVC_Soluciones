@@ -1,0 +1,23 @@
+header {
+    height: 100vh;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header #logo {
+    display: none;
+}
+header h1 {
+    font-family: 'Montserrat';
+    font-size: 1.1rem;
+    font-weight: 200;
+    text-shadow: 1px 2px 2px black;
+    color: white;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    text-align: center;
+}
