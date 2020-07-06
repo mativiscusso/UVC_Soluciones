@@ -12,10 +12,31 @@
 #formulario label {
   color: white;
 }
+#formulario .btn-formulario {
+  width: 55%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: block;
+  /* text-align: center; */
+  margin: auto;
+  transition: all 200ms;
+}
+#formulario .btn-formulario:hover {
+  cursor: pointer;
+  background-color: white;
+  color: $grisOscuro;
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  #formulario .btn-formulario {
+    width: 15%;
+  }
 }

@@ -28,6 +28,12 @@
   margin: auto;
   margin-top: 1.5rem;
 }
+#productos .logos-productos {
+	text-align: center;
+}
+#productos .logos-productos figure{
+	padding: 1rem;
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 }
@@ -41,7 +47,22 @@
     padding: 3rem;
     display: flex;
   }
+  #productos article h2 {
+	font-size: 2rem; 
+	font-weight: bold;	
+}
   #productos article .impar {
     order: 1;
   }
+  #productos .text-product-impar {
+	  padding: 0 3rem;
+    text-align: end;
+  }
+  #productos .text-product-par {
+	  padding: 0 3rem;
+    text-align: start;
+  }
+  #productos .logos-productos {
+	display:flex;
+}
 }

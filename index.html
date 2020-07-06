@@ -12,39 +12,37 @@
 <body>
     <header>
         <!-- Logo -->
-        <div id="logo">
-            <img src="" alt="">
+        <div class="logo-menu-fixed">
+            <img src="assets/img/logo.png" alt="uvc soluciones">
         </div>
         <!-- Logo -->
 
+
         <!-- Menu -->
         <nav id="menu">
-            <div class="logo-menu-fixed">
-                <img src="assets/img/logo.png" alt="uvc soluciones">
-            </div>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
                 <span id="logo-menu">
                     <img src="assets/img/logo.png" alt="uvc soluciones">
                 </span>
-                <li><a href="/">Home</a></li>
-                <li><a data-scroll href="#productos">Productos</a></li>
-                <li><a data-scroll href="#aplicaciones">Aplicaciones</a></li>
-                <li><a data-scroll href="#nosotros">Nosotros</a></li>
-                <li><a data-scroll href="#contacto">Contacto</a></li>
+                <li class="hvr-underline-from-center"><a href="/">Home</a></li>
+                <li class="hvr-underline-from-center"><a data-scroll href="#productos">Productos</a></li>
+                <li class="hvr-underline-from-center"><a data-scroll href="#aplicaciones">Aplicaciones</a></li>
+                <li class="hvr-underline-from-center"><a data-scroll href="#nosotros">Nosotros</a></li>
+                <li class="hvr-underline-from-center"><a data-scroll href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <!-- Menu -->
 
-        <h1>Estamos salvando vidas</h1>
+        <h1 class="slide-in-bottom">Estamos salvando vidas</h1>
 
     </header>
 
     <main>
         <!-- Seccion desinfeccion -->
         <section id="desinfeccion">
-            <div>
+            <div data-aos="fade-left">
                 <h2>DESINFECCION</h2>
                 <h3>MEDIANTE LUZ UV</h3>
                 <p>Con el objetivo de brindar soluciones sanitarias eficientes frente a la situacion actual y con vision
@@ -57,25 +55,28 @@
 
         <!-- Seccion caracteristicas -->
         <section id="caracteristicas">
-            <div>
-                <figure><img src="assets/img/caracteristica1.png" alt=""></figure>
+            <div data-aos="fade-up">
+                <figure class="py-2 hvr-push"><img src="assets/img/caracteristica1.png" alt=""></figure>
                 <h3><strong>EFICACIA</strong></h3>
                 <h4>ASEGURADA</h4>
-                <p>La innovadora tecnologia de radiacion UVC funcona como un eficiente germicida alterando el ADN/ARN de
+                <p class="py-2">La innovadora tecnologia de radiacion UVC funcona como un eficiente germicida alterando
+                    el ADN/ARN de
                     los patogenos agresivos, evitando asi que se propaguen.</p>
             </div>
-            <div>
-                <figure><img src="assets/img/caracteristica2.png" alt=""></figure>
+            <div data-aos="fade-up">
+                <figure class="py-2 hvr-push"><img src="assets/img/caracteristica2.png" alt=""></figure>
                 <h3><strong>SIN CONTAMINANTES</strong></h3>
                 <h4>SECUNDARIOS</h4>
-                <p>El proceso de desinfeccion no produce ozono ni contaminantes secundarios, permitiendo que puedan
+                <p class="py-2">El proceso de desinfeccion no produce ozono ni contaminantes secundarios, permitiendo
+                    que puedan
                     volver a utilizarse los espacios inmediatamente despues del tratamiento.</p>
             </div>
-            <div>
-                <figure><img src="assets/img/caracteristica3.png" alt=""></figure>
+            <div data-aos="fade-up">
+                <figure class="py-2 hvr-push"><img src="assets/img/caracteristica3.png" alt=""></figure>
                 <h3><strong>MAXIMA</strong></h3>
                 <h4>SEGURIDAD</h4>
-                <p>La luz UVC no requiere transporte, almacenamiento ni manipulacion de sustancias quimicas toxicas o
+                <p class="py-2">La luz UVC no requiere transporte, almacenamiento ni manipulacion de sustancias quimicas
+                    toxicas o
                     corrosivas, garanticando la seguridad de las personas.</p>
             </div>
         </section>
@@ -87,7 +88,7 @@
             <!-- Producto darpas -->
             <article>
                 <img src="assets/img/productos/darpas_landing.png" alt="producto" class="img-fluid impar">
-                <div>
+                <div class="text-product-impar">
                     <h2 class="py-3"><strong>Darpas</strong>&nbsp;|+</h2>
                     <p>El sistema de desinfeccion DARPAS |+ fue diselado para usarse como parte de un programa de
                         limpieza y desinfeccion para eliminar patodenos de diversas superficies. Cuenta con 12 lamparas
@@ -95,20 +96,20 @@
                     <hr>
                     <div class="py-3">
                         <a href="#">Ver mas</a><br>
-                        <a href="#">Descarga <strong>CATALOGO</strong></a>
+                        <a href="#" class="mt-1">Descarga <strong>CATALOGO</strong></a>
                     </div>
-                    <div>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Desinfeccion de 99,99% en 20 minutos.</p>
+                    <div class="logos-productos">
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-1.png" alt="">
+                            <p class="mt-1">Desinfeccion de 99,99% en 20 minutos.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Ahorro de tiempo y costos.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-4.png" alt="">
+                            <p class="mt-1">Ahorro de tiempo y costos.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Maxima seguridad para el personal.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-3.png" alt="">
+                            <p class="mt-1">Maxima seguridad para el personal.</p>
                         </figure>
                     </div>
                 </div>
@@ -118,7 +119,7 @@
             <!-- Producto airnod -->
             <article>
                 <img src="assets/img/productos/airnod_landing.png" alt="producto" class="img-fluid">
-                <div>
+                <div class="text-product-par">
                     <h2 class="py-3"><strong>Air</strong>&nbsp;NOD</h2>
                     <p>AirNOD.UVC es un dispositivo electronico semifijo escalable a distintas habitaciones, diseñado
                         para proveeer aire limpio y libre de contaminantes.
@@ -128,20 +129,20 @@
                     <hr>
                     <div class="py-3">
                         <a href="#">Ver mas</a><br>
-                        <a href="#">Descarga <strong>CATALOGO</strong></a>
+                        <a href="#" class="mt-1">Descarga <strong>CATALOGO</strong></a>
                     </div>
-                    <div>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Desinfeccion de 99,99% en ciclos intermitentes.</p>
+                    <div class="logos-productos">
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-1.png" alt="">
+                            <p class="mt-1">Desinfeccion de 99,99% en ciclos intermitentes.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Sistema escalable a lugares con circulacion de personas.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-6.png" alt="">
+                            <p class="mt-1">Sistema escalable a lugares con circulacion de personas.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>No genera residuos quimicos.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-5.png" alt="">
+                            <p class="mt-1">No genera residuos quimicos.</p>
                         </figure>
                     </div>
                 </div>
@@ -151,7 +152,7 @@
             <!-- Producto uvc dual -->
             <article>
                 <img src="assets/img/productos/dual_landing.png" alt="" class="img-fluid impar"></div>
-                <div>
+                <div class="text-product-impar">
                     <h2 class="py-3"><strong>UVC</strong>&nbsp;Dual</h2>
                     <p>El sistema UVC DUAL fue diseñado para usarse como parte de un programa continuo de
                         desinfeccion.
@@ -161,20 +162,20 @@
                     <hr>
                     <div class="py-3">
                         <a href="#">Ver mas</a><br>
-                        <a href="#">Descarga <strong>CATALOGO</strong></a>
+                        <a href="#" class="mt-1">Descarga <strong>CATALOGO</strong></a>
                     </div>
-                    <div>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Desinfeccion de 99,99% en 20 minutos.</p>
+                    <div class="logos-productos">
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-1.png" alt="">
+                            <p class="mt-1">Desinfeccion de 99,99% en 20 minutos.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Ahorro de tiempo y costos.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-4.png" alt="">
+                            <p class="mt-1">Ahorro de tiempo y costos.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Maxima seguridad para el personal.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-3.png" alt="">
+                            <p class="mt-1">Maxima seguridad para el personal.</p>
                         </figure>
                     </div>
                 </div>
@@ -184,7 +185,7 @@
             <!-- Producto uv flow -->
             <article>
                 <img src="assets/img/productos/flow_landing.png" alt="" class="img-fluid"></div>
-                <div>
+                <div class="text-product-par">
                     <h2 class="py-3"><strong>UV</strong>&nbsp;Flow</h2>
                     <p>UVFlow es un dispositivo fijo electronico que consta de un aplique para ser montado sobre
                         distintas superficies. Su sistema fue diseñado para usarse como parte de un programa
@@ -195,20 +196,20 @@
                     <hr>
                     <div class="py-3">
                         <a href="#">Ver mas</a><br>
-                        <a href="#">Descarga <strong>CATALOGO</strong></a>
+                        <a href="#" class="mt-1">Descarga <strong>CATALOGO</strong></a>
                     </div>
-                    <div>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Desinfeccion de 99,99% en ciclos intermitentes.</p>
+                    <div class="logos-productos">
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-1.png" alt="">
+                            <p class="mt-1">Desinfeccion de 99,99% en ciclos intermitentes.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>Sistema escalable a lugares con circulacion de personas.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-6.png" alt="">
+                            <p class="mt-1">Sistema escalable a lugares con circulacion de personas.</p>
                         </figure>
-                        <figure>
-                            <img src="" alt="">
-                            <p>No genera residuos quimicos.</p>
+                        <figure class="">
+                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-5.png" alt="">
+                            <p class="mt-1">No genera residuos quimicos.</p>
                         </figure>
                     </div>
                 </div>
@@ -260,23 +261,30 @@
         <!-- Seccion Nostros  -->
         <section id="nosotros">
             <h1 class="py-4">Nosotros</h1>
+            <article data-aos="fade-in">
             <figure>
                 <img src="assets/img/nosotros_icon.png" alt="">
             </figure>
-            <p>En el marco de la pandemia por COVID-19 que tuvo origen en Wuhan, China y que posteriormente alcanzo
-                caracter global, cientificos de todo el mundo pusieron manos a la obra para aportar soluciones
-                sanitarias que pudieran dar respuesta a las distintas necesidades consecuencia de esta situacion.</p>
-            <br>
-            <p><strong>Es asi que un equipo de profesionales cientificos rosarinos nos unimos para desarrollar toda una
-                    linea de
-                    dispositivos que mediante la utilizacion de tecnologia de luz Ultravioleta-C (UVC) inactiva
-                    microorganismos como bacterias, virus, hongos y protozoos.</strong></p>
-            <br>
-            <p>Actualmente hemos desarrollado cuantro tipos de dispositivos pensados para dar respuesta en diferentes
-                situaciones y espacios, desde hospitales hasta espacios publicos. Si bien los mismos fueron
-                desarrollados como medida y solucion frente al SARS COV2 (comunmente conocido como coronavirus), estan
-                pensados para la eliminacion de distintos tipos de patogenos creanddo ambientes desinfectados y seguros
-                para la circulacion de personas.</p>
+                <p>En el marco de la pandemia por COVID-19 que tuvo origen en Wuhan, China y que posteriormente alcanzo
+                    caracter global, cientificos de todo el mundo pusieron manos a la obra para aportar soluciones
+                    sanitarias que pudieran dar respuesta a las distintas necesidades consecuencia de esta situacion.
+                </p>
+                <br>
+                <p><strong>Es asi que un equipo de profesionales cientificos rosarinos nos unimos para desarrollar toda
+                        una
+                        linea de
+                        dispositivos que mediante la utilizacion de tecnologia de luz Ultravioleta-C (UVC) inactiva
+                        microorganismos como bacterias, virus, hongos y protozoos.</strong></p>
+                <br>
+                <p>Actualmente hemos desarrollado cuantro tipos de dispositivos pensados para dar respuesta en
+                    diferentes
+                    situaciones y espacios, desde hospitales hasta espacios publicos. Si bien los mismos fueron
+                    desarrollados como medida y solucion frente al SARS COV2 (comunmente conocido como coronavirus),
+                    estan
+                    pensados para la eliminacion de distintos tipos de patogenos creanddo ambientes desinfectados y
+                    seguros
+                    para la circulacion de personas.</p>
+            </article>
         </section>
         <!-- Seccion Nostros  -->
 
@@ -293,6 +301,7 @@
                     <input type="text" name="asunto" id="">
                     <label class="pt-2" for="mensaje">Mensaje</label>
                     <textarea class="pt-2" name="mensaje" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn-formulario">Enviar</button>
                 </form>
                 <!-- Formulario contacto  -->
 
@@ -338,6 +347,14 @@
     <!-- Scripts -->
     <!-- Efecto navbar scroll  -->
     <script src="assets/js/navbar.js"></script>
+
+    <!-- Efecto smooth scroll  -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script defer> var scroll = new SmoothScroll('a[href*="#"]'); </script>
+
+    <!-- Efectos on scroll -->
+    <script src="assets/js/aos.js"></script>
+    <script> AOS.init(); </script>
 </body>
 
 </html>

@@ -1,5 +1,10 @@
 #redes {
   background-color: $grisClaro;
+  display: flex;
+  justify-content: space-evenly;
+}
+#redes a img {
+  width: 60%;
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -7,4 +12,7 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  #redes{
+    padding: 2rem 15rem;
+  }
 }
