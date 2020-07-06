@@ -95,6 +95,7 @@ label {
 }
 
 #menu ul {
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -211,7 +212,20 @@ label {
   display: none;
 }
 
-@media (min-width: 998px) {
+.logo-menu-fixed {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .logo-menu-fixed {
+    position: absolute;
+    left: 100px;
+    display: block;
+  }
+  .logo-menu-fixed img {
+    width: 50%;
+    left: 50px;
+  }
   #menu ul {
     background-color: transparent;
     display: -webkit-box;
@@ -226,6 +240,7 @@ label {
     padding-right: 2rem;
   }
   #menu li a {
+    color: white;
     border: 0;
     font-weight: bold;
     padding: 20px 20px;
@@ -241,14 +256,14 @@ label {
   #logo-menu img {
     -o-object-fit: contain;
        object-fit: contain;
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
-  .menu.is-fixed {
+  #menu .menu.is-fixed {
     position: fixed;
     -webkit-box-shadow: 3px 3px 10px #0000001f;
             box-shadow: 3px 3px 10px #0000001f;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #585c67;
     -webkit-animation: fadein 0.3s;
     /* Safari, Chrome and Opera > 12.1 */
     /* Firefox < 16 */
@@ -297,7 +312,7 @@ header #logo {
 }
 
 header h1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 1.1rem;
   font-weight: 200;
   text-shadow: 1px 2px 2px black;
@@ -310,6 +325,23 @@ header h1 {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    background-position-y: unset;
+  }
+  header h1 {
+    font-size: 1.7rem;
+    letter-spacing: 0.7rem;
+    bottom: 5%;
+  }
+}
+
 #desinfeccion {
   background-image: url("../img/desinfeccion.png");
   background-size: cover;
@@ -318,11 +350,28 @@ header h1 {
 }
 
 #desinfeccion div {
-  padding: 2rem 3rem;
+  text-align: center;
+  padding: 3rem;
 }
 
 #desinfeccion h3 {
   color: #4b7ff1;
+}
+
+@media (min-width: 1200px) {
+  #desinfeccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 4rem 3rem;
+  }
+  #desinfeccion div {
+    width: 45%;
+    text-align: start;
+  }
 }
 
 #caracteristicas {
@@ -331,12 +380,27 @@ header h1 {
 }
 
 #caracteristicas div {
-  padding: 2rem 3rem;
+  padding: 3rem;
   text-align: center;
 }
 
 #caracteristicas h4 {
   color: #2e4473;
+}
+
+@media (min-width: 768px) {
+  #caracteristicas div {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #caracteristicas {
+    padding: 3rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 #productos h1 {
@@ -350,7 +414,20 @@ header h1 {
   color: #2e4473;
 }
 
-#productos article, a {
+#productos article {
+  padding: 2rem 1rem;
+  color: #4b7ff1;
+}
+
+#productos article a {
+  color: #4b7ff1;
+}
+
+#productos article h2 {
+  color: #585c67;
+}
+
+#productos article h2 strong {
   color: #4b7ff1;
 }
 
@@ -359,8 +436,26 @@ header h1 {
 }
 
 #productos hr {
-  width: 50%;
+  width: 70%;
   margin: auto;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  #productos h1 {
+    padding: 2rem 0;
+  }
+  #productos article {
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #productos article .impar {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 #aplicaciones h1 {
@@ -409,9 +504,12 @@ header h1 {
 }
 
 @media (min-width: 1200px) {
-  #aplicaciones .container figure {
+  #aplicaciones .container .div-imagen {
     width: 25%;
     position: relative;
+  }
+  #aplicaciones .div-imagen > div {
+    padding: 5rem 1rem;
   }
 }
 
@@ -425,6 +523,15 @@ header h1 {
 
 #nosotros figure {
   padding: 2rem 0;
+}
+
+@media (min-width: 1200px) {
+  #nosotros {
+    padding: 4rem 9rem;
+  }
+  #nosotros h1 {
+    font-size: 2rem;
+  }
 }
 
 footer {
@@ -450,13 +557,21 @@ footer h2 {
   color: white;
 }
 
+@media (min-width: 1200px) {
+  footer {
+    padding: 4rem 0 0 0;
+  }
+}
+
 #formulario input {
+  width: 60%;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid white;
 }
 
 #formulario textarea {
+  width: 60%;
   background-color: transparent;
   border: 1px solid white;
 }

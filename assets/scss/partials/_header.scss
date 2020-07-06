@@ -1,23 +1,41 @@
 header {
-    height: 100vh;
-    background-image: url('../img/header.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  height: 100vh;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 header #logo {
-    display: none;
+  display: none;
 }
 header h1 {
-    font-family: 'Montserrat';
-    font-size: 1.1rem;
-    font-weight: 200;
-    text-shadow: 1px 2px 2px black;
-    color: white;
-    letter-spacing: 0.4rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20%;
-    text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  font-weight: 200;
+  text-shadow: 1px 2px 2px black;
+  color: white;
+  letter-spacing: 0.4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  text-align: center;
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  header {
+    background-position-y: unset;
+  }
+  header h1 {
+    font-size: 1.7rem;
+    letter-spacing: 0.7rem;
+    bottom: 5%;
+  }
 }

@@ -45,8 +45,11 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #aplicaciones .container figure {
+  #aplicaciones .container .div-imagen {
     width: 25%;
     position: relative;
+  }
+  #aplicaciones .div-imagen > div {
+    padding: 5rem 1rem;
   }
 }
