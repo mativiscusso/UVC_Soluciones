@@ -1,3 +1,12 @@
+#contacto {
+  background-color: $grisOscuro;
+  text-align: center;
+  padding: 3rem 0 0 0;
+}
+#contacto h2 {
+  color: white;
+}
+
 #formulario input {
   width: 60%;
   background-color: transparent;
@@ -17,7 +26,7 @@
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 1rem;
   padding: 0.5rem;
   display: block;
@@ -36,7 +45,15 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  #formulario {
+    padding: 2rem 1rem;
+  }
   #formulario .btn-formulario {
     width: 15%;
+  }
+  #formulario input,
+  #formulario textarea {
+    font-size: 1rem;
+    width: 40%;
   }
 }

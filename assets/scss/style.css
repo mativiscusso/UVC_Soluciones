@@ -1941,7 +1941,7 @@ header h1 {
 footer {
   background-color: #585c67;
   text-align: center;
-  padding: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 footer div {
@@ -1967,6 +1967,16 @@ footer h2 {
   }
 }
 
+#contacto {
+  background-color: #585c67;
+  text-align: center;
+  padding: 3rem 0 0 0;
+}
+
+#contacto h2 {
+  color: white;
+}
+
 #formulario input {
   width: 60%;
   background-color: transparent;
@@ -1989,7 +1999,7 @@ footer h2 {
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 1rem;
   padding: 0.5rem;
   display: block;
@@ -2006,8 +2016,16 @@ footer h2 {
 }
 
 @media (min-width: 1200px) {
+  #formulario {
+    padding: 2rem 1rem;
+  }
   #formulario .btn-formulario {
     width: 15%;
+  }
+  #formulario input,
+  #formulario textarea {
+    font-size: 1rem;
+    width: 40%;
   }
 }
 
