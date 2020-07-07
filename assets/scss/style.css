@@ -1977,17 +1977,32 @@ footer h2 {
   color: white;
 }
 
+#formulario {
+  margin: auto;
+  width: 80%;
+  padding: 2rem 1rem;
+}
+
 #formulario input {
-  width: 60%;
+  color: white;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid white;
+  width: 100%;
+}
+
+#formulario #label-mensaje {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 #formulario textarea {
-  width: 60%;
   background-color: transparent;
   border: 1px solid white;
+  border-top: 0;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 #formulario label {
@@ -2017,15 +2032,33 @@ footer h2 {
 
 @media (min-width: 1200px) {
   #formulario {
-    padding: 2rem 1rem;
+    width: 50%;
   }
   #formulario .btn-formulario {
-    width: 15%;
+    width: 25%;
+  }
+  #formulario .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+  }
+  #formulario label {
+    border-bottom: 1px solid white;
+  }
+  #formulario .text-group {
+    text-align: start;
+  }
+  #formulario .text-group label {
+    padding: 1rem;
+    border-bottom: 0;
   }
   #formulario input,
   #formulario textarea {
-    font-size: 1rem;
-    width: 40%;
+    padding-left: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
   }
 }
 
