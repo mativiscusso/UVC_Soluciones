@@ -1,68 +1,173 @@
-#productos h1 {
-  background-color: $grisOscuro;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+#productos {
+    h1 {
+        background-color: $grisOscuro;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        strong {
+            color: $azul;
+        }
+    }
+    article {
+        padding: 2rem 1rem;
+        color: $celesteLetras;
+        &:nth-child(odd) {
+            background-color: $grisClaro;
+        }
+    }
+    a {
+        color: $celesteLetras;
+    }
+    h1 {
+        color: $grisTitulo;
+        font-family: "Montserrat Light";
+        strong {
+            font-family: "Montserrat Extra Bold";
+            color: $celesteTitulo;
+        }
+    }
+    h2 {
+        color: $celesteTitulo;
+
+        font-family: "Montserrat Extra Bold";
+        span {
+            color: $grisTitulo;
+            font-weight: 100;
+            font-family: "Montserrat Extra Light";
+        }
+    }
+    hr {
+        width: 40%;
+        margin: 1rem auto;
+        border: none;
+        border-bottom: 1px solid $celesteLetras;
+    }
+    .logos-productos {
+        text-align: center;
+        figure {
+            padding: 1rem;
+        }
+    }
 }
-#productos h1 strong {
-  color: $azul;
-}
-#productos article {
-  padding: 2rem 1rem;
-  color: $celesteLetras;
-}
-#productos article a {
-  color: $celesteLetras;
-}
-#productos article h2 {
-  color: $grisOscuro;
-}
-#productos article h2 strong {
-  color: $celesteLetras;
-}
-#productos article:nth-child(odd) {
-  background-color: $grisClaro;
-}
-#productos hr {
-  width: 70%;
-  margin: auto;
-  margin-top: 1.5rem;
-}
-#productos .logos-productos {
-	text-align: center;
-}
-#productos .logos-productos figure{
-	padding: 1rem;
-}
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+#darpas {
+    #ventajas {
+        padding: 2rem 1rem;
+        background-color: $grisOscuro;
+        color: #fff;
+        width: 100%;
+    }
+    article {
+        padding: 0rem 1rem;
+        #imagen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            order: 2;
+            img {
+                width: 80%;
+                padding: 2rem 0;
+            }
+        }
+    }
+    footer {
+        padding: 0;
+    }
 }
 
-// Extra large devices (large desktops, 1200px and up)
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #darpas {
+        article {
+            #imagen {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+// Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #productos h1 {
-    padding: 2rem 0;
-  }
-  #productos article {
-    padding: 3rem;
-    display: flex;
-  }
-  #productos article h2 {
-	font-size: 2rem; 
-	font-weight: bold;	
+    #productos {
+        h1 {
+            padding: 2rem 0;
+        }
+        article {
+            padding: 4rem;
+            display: flex;
+        }
+        img {
+            padding: 0 3rem;
+        }
+        article h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        article .impar {
+            order: 1;
+        }
+        .text-product-impar {
+            padding: 0 3rem;
+            text-align: end;
+            hr {
+                margin: 1.5rem 0 1rem auto;
+            }
+        }
+        .text-product-par {
+            padding: 0 3rem;
+            text-align: start;
+            hr {
+                margin: 1.5rem auto 1rem 0;
+            }
+        }
+        .logos-productos {
+            display: flex;
+        }
+    }
+    #darpas {
+        #menu {
+            position: relative;
+        }
+        #productos {
+            margin-top: 7rem;
+        }
+        #ventajas {
+            padding: 2rem 11rem;
+            width: 100%;
+        }
+        article {
+            padding: 0rem 11rem;
+            #imagen {
+                img {
+                    width: 80%;
+                    padding: 2rem 0;
+                }
+            }
+            .text-left {
+                width: 50%;
+            }
+        }
+    }
 }
-  #productos article .impar {
-    order: 1;
-  }
-  #productos .text-product-impar {
-	  padding: 0 3rem;
-    text-align: end;
-  }
-  #productos .text-product-par {
-	  padding: 0 3rem;
-    text-align: start;
-  }
-  #productos .logos-productos {
-	display:flex;
-}
+// Extra Large devices (large desktops, 1600px and up)
+@media (min-width: 1600px) {
+    #productos {
+        article {
+            padding: 8rem;
+            img {
+                padding: 0 6rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    #darpas {
+        article {
+            padding: 0rem 10rem 2rem 22rem;
+        }
+        #ventajas {
+            padding: 2rem 10rem 2rem 22rem;
+        }
+    }
 }

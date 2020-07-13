@@ -1,55 +1,58 @@
 #contacto {
-  background-color: $grisOscuro;
-  text-align: center;
-  padding: 3rem 0 0 0;
+    background-color: $grisOscuro;
+    text-align: center;
+    padding: 3rem 0 0 0;
 }
 #contacto h2 {
-  color: white;
+    color: white;
 }
 #formulario {
-  margin: auto;
-  width: 80%;
-  padding: 2rem 1rem;
+    margin: auto;
+    width: 80%;
+    padding: 2rem 1rem;
 }
 #formulario input {
-  color: white;
-  background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid white;
-  width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 1.5em;
 }
 #formulario #label-mensaje {
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 #formulario textarea {
-  background-color: transparent;
-  border: 1px solid white;
-  border-top: 0;
-  padding: 0.5rem;
-  width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-top: 0;
+    padding: 0.5rem;
+    width: 100%;
+    color: white;
+    font-size: 1.5em;
 }
 #formulario label {
-  color: white;
+    color: white;
 }
 #formulario .btn-formulario {
-  width: 55%;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  font-family: "Montserrat";
-  font-size: 1rem;
-  padding: 0.5rem;
-  display: block;
-  /* text-align: center; */
-  margin: auto;
-  transition: all 200ms;
+    width: 55%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: block;
+    /* text-align: center; */
+    margin: auto;
+    transition: all 200ms;
 }
 #formulario .btn-formulario:hover {
-  cursor: pointer;
-  background-color: white;
-  color: $grisOscuro;
+    cursor: pointer;
+    background-color: white;
+    color: $grisOscuro;
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -57,31 +60,31 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #formulario {
-    width: 50%;
-  }
-  #formulario .btn-formulario {
-    width: 25%;
-  }
-  #formulario .form-group {
-    display: flex;
-    text-align: start;
-  }
-  #formulario label {
-    border-bottom: 1px solid white;
-  }
-  #formulario .text-group {
-    text-align: start;
-  }
-  #formulario .text-group label {
-    padding: 1rem;
-    border-bottom: 0;
-  }
-  #formulario input,
-  #formulario textarea {
-    padding-left: 2rem;
-    color: white;
-    font-size: 1.2rem;
-    width: 100%;
-  }
+    #formulario {
+        width: 50%;
+    }
+    #formulario .btn-formulario {
+        width: 25%;
+    }
+    #formulario .form-group {
+        display: flex;
+        text-align: start;
+    }
+    #formulario label {
+        border-bottom: 1px solid white;
+    }
+    #formulario .text-group {
+        text-align: start;
+    }
+    #formulario .text-group label {
+        padding: 1rem;
+        border-bottom: 0;
+    }
+    #formulario input,
+    #formulario textarea {
+        padding-left: 2rem;
+        color: white;
+        font-size: 1.2rem;
+        width: 100%;
+    }
 }

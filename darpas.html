@@ -25,11 +25,11 @@
             <span id="logo-menu">
                 <img src="assets/img/logo.png" alt="uvc soluciones">
             </span>
-            <li class="hvr-underline-from-center"><a href="/">Home</a></li>
-            <li class="hvr-underline-from-center"><a href="/#productos">Productos</a></li>
-            <li class="hvr-underline-from-center"><a href="/#aplicaciones">Aplicaciones</a></li>
-            <li class="hvr-underline-from-center"><a href="/#nosotros">Nosotros</a></li>
-            <li class="hvr-underline-from-center"><a href="/#contacto">Contacto</a></li>
+            <li class="hvr-underline-from-center"><a class="text-gray-dark" href="/">Home</a></li>
+            <li class="hvr-underline-from-center"><a class="text-gray-dark" href="/#productos">Productos</a></li>
+            <li class="hvr-underline-from-center"><a class="text-gray-dark" href="/#aplicaciones">Aplicaciones</a></li>
+            <li class="hvr-underline-from-center"><a class="text-gray-dark" href="/#nosotros">Nosotros</a></li>
+            <li class="hvr-underline-from-center"><a class="text-gray-dark" href="/#contacto">Contacto</a></li>
         </ul>
     </nav>
     <!-- Menu -->
@@ -37,32 +37,100 @@
     <main class="py-4">
         <section id="productos">
             <!-- Producto darpas -->
-            <article>
-                <img src="assets/img/productos/darpas_landing.png" alt="producto" class="img-fluid impar">
-                <div class="text-product-impar">
+            <article class="bg-white">
+                <div id="imagen" class="py-3">
+                    <a href="#" class="mt-1">Descarga <strong>CATALOGO</strong></a>
+                    <img src="assets/img/productos/darpas_producto.png" alt="producto">
+                </div>
+                <!-- Caracteristicas -->
+                <div class="text-left">
                     <h2 class="py-3"><strong>Darpas</strong>&nbsp;|+</h2>
-                    <p>El sistema de desinfeccion DARPAS |+ fue diselado para usarse como parte de un programa de
-                        limpieza y desinfeccion para eliminar patodenos de diversas superficies. Cuenta con 12 lamparas
-                        UVC con una duracion aproximada de 9.000 horas de uso.</p>
+                    <p><strong>El sistema de desinfección DARPAS I + fue diseñado para
+                            usarse como parte de un programa de limpieza y desinfección
+                            para eliminar patógenos de diversas superficies.</strong> Cuenta con 12
+                        lámparas UVC con una duración aproximada de 9.000 horas de uso.</p>
+                    <br>
+                    <p>Un dispositivo móvil electrónico conformado por un mástil
+                        vertical montado sobre una base resistente a la energía UVC
+                        con ruedas que le brindan una movilidad 360°. Unidad de simple
+                        manejo resistente al uso diario, con sensores diseñados para
+                        proteger a las personas frente a la posible exposición accidental
+                        durante los ciclos de desinfección.</p>
+                    <br>
+                    <p>El sistema se controla de forma inalámbrica mediante un control
+                        de tableta y un controlador lógico programable interno.
+                    </p>
                     <hr>
+                    <!-- Funcionamiento  -->
                     <div class="py-3">
-                        <a href="/darpas.html">Ver mas</a><br>
-                        <a href="#" class="mt-1">Descarga <strong>CATALOGO</strong></a>
+                        <h3 class="py-2">Funcionamiento</h3>
+                        <p><strong>La innovadora tecnología de radiación UVC funciona como un
+                                eficiente germicida alterando el ADN/ARN de los patógenos
+                                agresivos, evitando así que se propaguen.</strong></p>
+
+                        <p>El proceso de desinfección no produce ozono ni contaminantes
+                            secundarios en las espacios donde es utilizado, permitiendo que
+                            puedan volver a utilizarse inmediatamente después del
+                            tratamiento.</p>
+
+                        <p>La luz UVC no requiere transporte, almacenamiento ni manipulación
+                            de sustancias químicas tóxicas o corrosivas, garantizando la
+                            seguridad de las personas.</p>
                     </div>
-                    <div class="logos-productos">
-                        <figure class="">
-                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-1.png" alt="">
-                            <p class="mt-1">Desinfeccion de 99,99% en 20 minutos.</p>
-                        </figure>
-                        <figure class="">
-                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-4.png" alt="">
-                            <p class="mt-1">Ahorro de tiempo y costos.</p>
-                        </figure>
-                        <figure class="">
-                            <img class="hvr-float-shadow" src="assets/img/productos/1x/logo-producto-3.png" alt="">
-                            <p class="mt-1">Maxima seguridad para el personal.</p>
-                        </figure>
-                    </div>
+                </div>
+            </article>
+            <!-- Ventajas  -->
+            <div id="ventajas">
+                <h3 class="py-2">Ventajas</h3>
+                <ul>
+                    <li>▼ Desinfección de 99,99% en un tiempo de 20-30 minutos.</li>
+                    <li>▼ Ahorro de tiempo y costos.</li>
+                    <li>▼ Máxima seguridad para el personal.</li>
+                    <li>▼ Garantiza higiene de instalaciones en general.</li>
+                    <li>▼ Permite la circulación en los espacios inmediatamente
+                        después de su uso.</li>
+                    <li>▼ No produce ozono ni contaminantes secundarios.</li>
+                </ul>
+            </div>
+            <article class="bg-white">
+                <!-- Funciones  -->
+                <div class="text-left py-3">
+                    <h3 class="py-2">Funciones:</h3>
+                    <p><strong>Sensores de movimiento</strong> que evitan los puntos ciegos.
+                        En caso de detectar movimiento, las luces UVC se apagan
+                        para detener el ciclo.
+                        <br>
+                    <p><strong>Controlador inalámbrico</strong> que permite al operador retirarse de la
+                        sala antes de empezar la cuenta regresiva para iniciar el ciclo
+                        de desinfección impidiendo la exposición a la energía UVC.
+                        Permite también controlar el estado de la unidad a distancia.</p>
+                    <br>
+                    <p><strong>Protección mediante contraseña</strong> para la activación de los ciclos
+                        de desinfección.</p>
+                    <br>
+                    <p><strong>Cubierta protectora para la lámpara y barreras para puertas.</strong></p>
+                    <br>
+                    <p>Registro de datos que permite la documentación de información
+                        sobre números de sala, ciclo seleccionado y el operador.</p>
+                </div>
+                <!-- Ciclos  -->
+            </article>
+            <article class="bg-white">
+                <div class="text-left py-3">
+                    <h3 class="py-2">Ciclos de desinfección:</h3>
+                    <p><strong>Bacteria/Virus → 3 metros</strong> - 8 minutos.</p>
+                    <p><strong>Bacteria/Virus/hongos → 5,4 metros</strong> - 17 minutos.</p>
+                    <p><strong>Esporas/hongos → 3 metros</strong> - 30 minutos.</p>
+                </div>
+            </article>
+            <article class="bg-white">
+                <!-- Mantenimiento  -->
+                <div class="text-left py-3">
+                    <h3 class="py-2">Mantenimiento</h3>
+                    <p>El mantenimiento preventivo, los ajustes y la sustitución de las
+                        piezas gastadas se realizan de forma programada con el fin de
+                        garantizar el rendimiento óptimo del equipo, reduciendo
+                        las interrupciones inoportunas y costosas del dispositivo.</p>
                 </div>
             </article>
         </section>

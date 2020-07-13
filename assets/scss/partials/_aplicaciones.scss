@@ -1,55 +1,63 @@
-#aplicaciones h1 {
-  background-color: $grisOscuro;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-#aplicaciones .container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-#aplicaciones .container img {
-  height: 100%;
-}
-#aplicaciones .container .div-imagen {
-  width: 50%;
-  display: inline-block;
-  position: relative;
-}
-
-#aplicaciones .div-imagen > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  padding: 3rem 1rem;
-  margin: 0;
-  background-color: $azul;
-  color: white;
+#aplicaciones {
+    h1 {
+        background-color: $grisOscuro;
+        color: $grisTitulo;
+        text-align: center;
+        font-family: "Montserrat Light";
+        padding: 1rem 0;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        img {
+            height: 100%;
+        }
+    }
+    .div-imagen {
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        & > div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            padding: 3rem 1rem;
+            margin: 0;
+            background-color: $azul;
+            color: white;
+        }
+    }
 }
 
 .desvanecer:hover {
-  opacity: 0.17;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
+    opacity: 0.17;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 }
 
-// Extra large devices (large desktops, 1200px and up)
+// Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #aplicaciones .container .div-imagen {
-    width: 25%;
-    position: relative;
-  }
-  #aplicaciones .div-imagen > div {
-    padding: 5rem 1rem;
-  }
+    #aplicaciones .container .div-imagen {
+        width: 25%;
+        position: relative;
+    }
+    #aplicaciones .div-imagen > div {
+        padding: 5rem 1rem;
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1600px) {
+    #aplicaciones .div-imagen > div {
+        padding: 8rem 1rem;
+    }
 }

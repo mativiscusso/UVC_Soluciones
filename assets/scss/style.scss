@@ -1,19 +1,41 @@
 // Colores
-$celesteFondo : #5a84e6;
-$celesteLetras : #4b7ff1;
+$celesteFondo : #6584ca;
+$celesteLetras : #88a7e9;
+$celesteTitulo: #4f87fd;
+$grisTitulo: #9c9c9d;
 $grisOscuro : #585c67;
 $grisClaro: #e2e2e2;
 $azul : #2e4473;
+$azulOscuro : #002677;
+
+@font-face{
+    font-family: "Montserrat Extra Light";
+    src: url('../fonts/Montserrat-ExtraLight.ttf');
+}
+
+@font-face{
+    font-family: "Montserrat Light";
+    src: url('../fonts/Montserrat-Light.ttf');
+}
 
 // Tipografia
 @font-face{
-  font-family: "Montserrat";
-  src: url('../fonts/Montserrat-Regular.ttf');
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+
+@font-face{
+    font-family: "Montserrat Extra Bold";
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
 }
 body {
     font-family: 'Montserrat';
 }
 
+h2 {
+    font-family: "Montserrat Extra Bold";
+}
 
 @import './partials/_resets';
 @import './partials/_animaciones';

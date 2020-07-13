@@ -1,29 +1,36 @@
 #desinfeccion {
-  background-image: url("../img/desinfeccion.png");
-  background-size: cover;
-  background-position: right;
-  color: white;
+    background-image: url("../img/desinfeccion.png");
+    background-size: cover;
+    background-position: right;
+    color: white;
+    div{
+        text-align: center;
+        padding: 3rem;
+    }
+    h3{
+        color: $celesteLetras;
+    }
+    p{
+        font-family: "Montserrat Light";
+        &.lead {
+            font-size: 1.2em;
+        }
+    }
 }
-#desinfeccion div {
-  text-align: center;
-  padding: 3rem;
-}
-#desinfeccion h3 {
-  color: $celesteLetras;
-}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #desinfeccion {
-    display: flex;
-    justify-content: flex-end;
-    padding: 4rem 3rem;
-  }
-  #desinfeccion div {
-    width: 45%;
-    text-align: start;
-  }
+    #desinfeccion {
+        display: flex;
+        justify-content: flex-end;
+        padding: 4rem 3rem;
+    }
+    #desinfeccion div {
+        width: 42%;
+        text-align: start;
+    }
 }

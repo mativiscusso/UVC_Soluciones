@@ -1,14 +1,18 @@
 #nosotros {
-  background-color: $azul;
-  background-image: url("../img/nosotros.png");
-  background-attachment: fixed;
-  background-position: center;
-  padding: 2rem 3rem;
-  color: white;
-  text-align: center;
-}
-#nosotros figure {
-  padding: 2rem 0;
+    background-color: $azulOscuro;
+    background-image: url("../img/nosotros.png");
+    background-attachment: fixed;
+    background-position: center;
+    padding: 2rem 3rem;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat Light";
+    figure {
+        padding: 2rem 0;
+    }
+    // h1 {
+        
+    // }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -16,13 +20,13 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #nosotros {
-    padding: 4rem 9rem;
-  }
-  #nosotros h1 {
-    font-size: 2rem;
-  }
-  #nosotros p {
-    font-size: 1.2rem;
-  }
+    #nosotros {
+        padding: 4rem 9rem;
+    }
+    #nosotros h1 {
+        font-size: 2rem;
+    }
+    #nosotros p {
+        font-size: 1.2rem;
+    }
 }

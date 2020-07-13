@@ -10,9 +10,16 @@
 @media (min-width: 768px) {
 }
 
-// Extra large devices (large desktops, 1200px and up)
+// Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   #redes{
     padding: 2rem 15rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1600px) {
+  #redes{
+    padding: 2rem 25rem;
   }
 }

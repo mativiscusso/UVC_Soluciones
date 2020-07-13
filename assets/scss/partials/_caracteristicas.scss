@@ -1,25 +1,32 @@
 #caracteristicas {
-  background-color: $celesteFondo;
-  color: white;
+    background-color: $celesteFondo;
+    color: white;
+    div {
+        padding: 3rem;
+        text-align: center;
+    }
+    h3 {
+        font-family: "Montserrat Extra Bold";
+    }
+    h4 {
+        color: $celesteLetras;
+    }
+    p {
+        font-family: "Montserrat Light";
+    }
 }
-#caracteristicas div {
-  padding: 3rem;
-  text-align: center;
-}
-#caracteristicas h4 {
-  color: $azul;
-}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  #caracteristicas div {
-    padding: 3rem 4rem;
-  }
+    #caracteristicas div {
+        padding: 3rem 4rem;
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #caracteristicas {
-    padding: 3rem 2rem;
-    display: flex;
-  }
+    #caracteristicas {
+        padding: 3rem 2rem;
+        display: flex;
+    }
 }
