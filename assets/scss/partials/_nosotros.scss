@@ -1,6 +1,6 @@
 #nosotros {
     background-color: $azulOscuro;
-    background-image: url("../img/nosotros.png");
+    background-image: url("../img/nosotros.jpg");
     background-attachment: fixed;
     background-position: center;
     padding: 2rem 3rem;
@@ -30,3 +30,9 @@
         font-size: 1.2rem;
     }
 }
+@media (min-width: 1200px) {
+    #nosotros {
+        padding: 4rem 11rem;
+    }
+}
+

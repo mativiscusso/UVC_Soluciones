@@ -1,52 +1,52 @@
 // Colores
-$celesteFondo : #6584ca;
-$celesteLetras : #88a7e9;
+$celesteFondo: #6584ca;
+$celesteLetras: #88a7e9;
 $celesteTitulo: #4f87fd;
 $grisTitulo: #9c9c9d;
-$grisOscuro : #585c67;
-$grisClaro: #e2e2e2;
-$azul : #2e4473;
-$azulOscuro : #002677;
+$grisOscuro: #585c67;
+$grisClaro: #f0f0f0;
+$azul: #2e4473;
+$azulOscuro: #01133b;
 
-@font-face{
-    font-family: "Montserrat Extra Light";
-    src: url('../fonts/Montserrat-ExtraLight.ttf');
+@font-face {
+  font-family: "Montserrat Extra Light";
+  src: url("../fonts/Montserrat-ExtraLight.ttf");
 }
 
-@font-face{
-    font-family: "Montserrat Light";
-    src: url('../fonts/Montserrat-Light.ttf');
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.ttf");
 }
 
 // Tipografia
-@font-face{
-    font-family: "Montserrat";
-    src: url('../fonts/Montserrat-Regular.ttf');
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
-
-@font-face{
-    font-family: "Montserrat Extra Bold";
-    src: url('../fonts/Montserrat-ExtraBold.ttf');
+@font-face {
+  font-family: "Montserrat Extra Bold";
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
 }
 body {
-    font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 h2 {
-    font-family: "Montserrat Extra Bold";
+  font-family: "Montserrat Extra Bold";
 }
 
-@import './partials/_resets';
-@import './partials/_animaciones';
-@import './partials/_aos';
-@import './partials/_navbar';
-@import './partials/_header';
-@import './partials/_desinfeccion';
-@import './partials/_caracteristicas';
-@import './partials/_productos';
-@import './partials/_aplicaciones';
-@import './partials/_nosotros';
-@import './partials/_footer';
-@import './partials/_contacto';
-@import './partials/_redes';
+@import "./partials/_resets";
+@import "./partials/_animaciones";
+@import "./partials/_aos";
+@import "./partials/_navbar";
+@import "./partials/_header";
+@import "./partials/_desinfeccion";
+@import "./partials/_caracteristicas";
+@import "./partials/_video";
+@import "./partials/_productos";
+@import "./partials/_aplicaciones";
+@import "./partials/_nosotros";
+@import "./partials/_footer";
+@import "./partials/_contacto";
+@import "./partials/_redes";

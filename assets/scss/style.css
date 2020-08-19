@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 h2 {
@@ -146,7 +146,7 @@ label {
 }
 
 .img-fluid {
-  width: 100% !important;
+  width: 100%;
 }
 
 .d-block {
@@ -1719,7 +1719,7 @@ label {
     display: block;
   }
   .logo-menu-fixed img {
-    width: 50%;
+    width: 75%;
     left: 50px;
   }
   #menu ul {
@@ -1755,7 +1755,7 @@ label {
   #logo-menu img {
     -o-object-fit: contain;
        object-fit: contain;
-    width: 70%;
+    width: 75%;
     height: 100%;
   }
   #menu .menu.is-fixed {
@@ -1800,7 +1800,8 @@ label {
 
 header {
   height: 100vh;
-  background-image: url("../img/header.png");
+  background-image: url("../img/header.jpg");
+  background-color: #6A6E91;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1843,7 +1844,7 @@ header h1 {
 }
 
 #desinfeccion {
-  background-image: url("../img/desinfeccion.png");
+  background-image: url("../img/desinfeccion.jpg");
   background-size: cover;
   background-position: right;
   color: white;
@@ -1882,6 +1883,12 @@ header h1 {
   }
 }
 
+@media (min-width: 1400px) {
+  #desinfeccion {
+    padding: 4rem 10rem;
+  }
+}
+
 #caracteristicas {
   background-color: #6584ca;
   color: white;
@@ -1912,10 +1919,38 @@ header h1 {
 
 @media (min-width: 1200px) {
   #caracteristicas {
-    padding: 3rem 2rem;
+    padding: 3rem 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 1400px) {
+  #caracteristicas {
+    padding: 3rem 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#video {
+  height: 30vh;
+}
+
+#video iframe {
+  width: 100%;
+  height: 30vh;
+}
+
+@media (min-width: 1200px) {
+  #video {
+    height: 100vh;
+  }
+  #video iframe {
+    width: 100%;
+    height: 100vh;
   }
 }
 
@@ -1936,7 +1971,7 @@ header h1 {
 }
 
 #productos article:nth-child(odd) {
-  background-color: #e2e2e2;
+  background-color: #f0f0f0;
 }
 
 #productos a {
@@ -2008,7 +2043,6 @@ header h1 {
 
 #darpas article #imagen img {
   width: 80%;
-  padding: 2rem 0;
 }
 
 #darpas footer {
@@ -2030,9 +2064,6 @@ header h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  #productos img {
-    padding: 0 3rem;
   }
   #productos article h2 {
     font-size: 2rem;
@@ -2062,6 +2093,9 @@ header h1 {
     display: -ms-flexbox;
     display: flex;
   }
+  #productos .img-producto-home {
+    width: 50%;
+  }
   #darpas #menu {
     position: relative;
   }
@@ -2077,19 +2111,15 @@ header h1 {
   }
   #darpas article #imagen img {
     width: 80%;
-    padding: 2rem 0;
   }
   #darpas article .text-left {
     width: 50%;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   #productos article {
-    padding: 8rem;
-  }
-  #productos article img {
-    padding: 0 6rem;
+    padding: 8rem 10rem;
   }
   #productos article p {
     font-size: 1.1rem;
@@ -2154,7 +2184,8 @@ header h1 {
     position: relative;
   }
   #aplicaciones .div-imagen > div {
-    padding: 5rem 1rem;
+    padding: 6rem 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -2165,8 +2196,8 @@ header h1 {
 }
 
 #nosotros {
-  background-color: #002677;
-  background-image: url("../img/nosotros.png");
+  background-color: #01133b;
+  background-image: url("../img/nosotros.jpg");
   background-attachment: fixed;
   background-position: center;
   padding: 2rem 3rem;
@@ -2188,6 +2219,12 @@ header h1 {
   }
   #nosotros p {
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #nosotros {
+    padding: 4rem 11rem;
   }
 }
 
@@ -2214,6 +2251,20 @@ footer h2 {
   color: white;
 }
 
+.back-to-top {
+  cursor: pointer;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2e4473;
+  color: #e2e2e2;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  display: none;
+}
+
 @media (min-width: 1200px) {
   footer {
     padding: 4rem 0 0 0;
@@ -2230,13 +2281,13 @@ footer h2 {
   color: white;
 }
 
-#formulario {
+#template-contactform {
   margin: auto;
   width: 80%;
   padding: 2rem 1rem;
 }
 
-#formulario input {
+#template-contactform input {
   color: white;
   background-color: transparent;
   border: 0;
@@ -2245,13 +2296,13 @@ footer h2 {
   font-size: 1.5em;
 }
 
-#formulario #label-mensaje {
+#template-contactform #label-mensaje {
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
-#formulario textarea {
+#template-contactform textarea {
   background-color: transparent;
   border: 1px solid white;
   border-top: 0;
@@ -2261,11 +2312,11 @@ footer h2 {
   font-size: 1.5em;
 }
 
-#formulario label {
+#template-contactform label {
   color: white;
 }
 
-#formulario .btn-formulario {
+#template-contactform .btn-formulario {
   width: 55%;
   background-color: transparent;
   border: 1px solid white;
@@ -2280,37 +2331,37 @@ footer h2 {
   transition: all 200ms;
 }
 
-#formulario .btn-formulario:hover {
+#template-contactform .btn-formulario:hover {
   cursor: pointer;
   background-color: white;
   color: #585c67;
 }
 
 @media (min-width: 1200px) {
-  #formulario {
+  #template-contactform {
     width: 50%;
   }
-  #formulario .btn-formulario {
+  #template-contactform .btn-formulario {
     width: 25%;
   }
-  #formulario .form-group {
+  #template-contactform .form-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: start;
   }
-  #formulario label {
+  #template-contactform label {
     border-bottom: 1px solid white;
   }
-  #formulario .text-group {
+  #template-contactform .text-group {
     text-align: start;
   }
-  #formulario .text-group label {
+  #template-contactform .text-group label {
     padding: 1rem;
     border-bottom: 0;
   }
-  #formulario input,
-  #formulario textarea {
+  #template-contactform input,
+  #template-contactform textarea {
     padding-left: 2rem;
     color: white;
     font-size: 1.2rem;
@@ -2319,10 +2370,13 @@ footer h2 {
 }
 
 #redes {
-  background-color: #e2e2e2;
+  background-color: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -2334,13 +2388,13 @@ footer h2 {
 
 @media (min-width: 1200px) {
   #redes {
-    padding: 2rem 15rem;
+    padding: 2rem 30rem;
   }
 }
 
 @media (min-width: 1600px) {
   #redes {
-    padding: 2rem 25rem;
+    padding: 2rem 45rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

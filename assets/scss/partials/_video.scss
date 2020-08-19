@@ -1,0 +1,24 @@
+#video {
+  height: 30vh;
+  iframe {
+    width: 100%;
+    height: 30vh;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #video {
+    height: 100vh;
+    iframe {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1600px) {
+}

@@ -1,5 +1,5 @@
 #desinfeccion {
-    background-image: url("../img/desinfeccion.png");
+    background-image: url("../img/desinfeccion.jpg");
     background-size: cover;
     background-position: right;
     color: white;
@@ -33,4 +33,10 @@
         width: 42%;
         text-align: start;
     }
+}
+@media (min-width: 1400px) {
+    #desinfeccion {
+        padding: 4rem 10rem;
+    }
+
 }

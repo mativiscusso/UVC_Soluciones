@@ -16,6 +16,20 @@ footer nav a {
 footer h2 {
   color: white;
 }
+
+.back-to-top {
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e4473;
+    color: #e2e2e2;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    display:none;
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 }

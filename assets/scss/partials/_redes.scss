@@ -1,6 +1,7 @@
 #redes {
   background-color: $grisClaro;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
 #redes a img {
@@ -13,13 +14,13 @@
 // Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   #redes{
-    padding: 2rem 15rem;
+    padding: 2rem 30rem;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1600px) {
   #redes{
-    padding: 2rem 25rem;
+    padding: 2rem 45rem;
   }
 }

@@ -26,7 +26,13 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     #caracteristicas {
-        padding: 3rem 2rem;
+        padding: 3rem 3rem;
+        display: flex;
+    }
+}
+@media (min-width: 1400px) {
+    #caracteristicas {
+        padding: 3rem 10em;
         display: flex;
     }
 }
